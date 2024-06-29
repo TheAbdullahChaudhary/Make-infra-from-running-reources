@@ -1,0 +1,12 @@
+provider "aws" {
+  region = "ap-south-1"
+}
+
+# Add empty resource blocks to be imported
+resource "aws_instance" "my_instance" {}
+resource "aws_vpc" "my_vpc" {}
+resource "aws_subnet" "public_subnet" {}
+resource "aws_internet_gateway" "my_igw" {}
+resource "aws_route_table" "public_route_table" {}
+resource "aws_iam_user" "my_user" {}
+resource "aws_iam_role" "my_role" {}
